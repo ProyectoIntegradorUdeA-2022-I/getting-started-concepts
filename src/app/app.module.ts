@@ -7,7 +7,7 @@ import { HelloWorldBindingsComponent } from './hello-world-bindings/hello-world-
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldBindingsComponent
+    HelloWorldBindingsComponent,
   ],
   imports: [
     BrowserModule

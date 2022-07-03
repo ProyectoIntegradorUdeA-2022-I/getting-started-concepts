@@ -1,7 +1,14 @@
+<!-- Attibute 'disabled' bound to the canNotClick 
+  property of the component controller, 
+  and a component's method 'sayMessage()' bound to a (click) user's event -->
 <button type="button" [disabled]="canNotClick" (click)="sayMessage()">
   Trigger alert message
 </button>
+
+<!-- id template's property bound to the sayHelloId controller's attribute -->
+<!-- style.color template's property bound to the fontColor controller's attribute -->
 <p [id]="sayHelloId" [style.color]="fontColor">
   You can set my color in the component!
 </p>
+<!-- fontColor controller's attribute rendered or interpolated into the paragraph template's element| -->
 <p>My color is {{ fontColor }}</p>
