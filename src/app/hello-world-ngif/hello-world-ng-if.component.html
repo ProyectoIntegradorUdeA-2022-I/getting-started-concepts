@@ -1,0 +1,18 @@
+<h2>Hello World: ngIf!</h2>
+<!-- This button uses a (click) event bound to the onEditClick() method, 
+    which toggles the boolena canEdit property value of the controller  -->
+<button type="button" (click)="onEditClick()" [style.color]="fontColor">{{buttonMessage}}</button>
+
+<div *ngIf="canEdit; else noEdit">
+    <!-- if canEdit == 'true' this paragraph is rendered -->
+    <p>You can edit the following paragraph.</p>
+</div>
+
+<!-- if canEdit == 'false', the noEdit tag is used, so this paragraph is rendered -->
+<ng-template #noEdit>
+    <p>The following paragraph is read only. Try clicking the button!</p>
+</ng-template>
+
+<!-- This paragraph is always rendered, but it's only editable if canEdit is true, 
+    and the message changes from the controller depending on the canEdit value -->
+<p [contentEditable]="canEdit" [style.color]="fontColor" [style.font]="fontFont">{{ message }}</p>
