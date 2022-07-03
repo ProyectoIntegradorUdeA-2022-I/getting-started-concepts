@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HelloWorldNgifComponent } from './hello-world-ngif.component';
+import { HelloWorldDiComponent } from './hello-world-di.component';
 
-describe('HelloWorldNgifComponent', () => {
-  let component: HelloWorldNgifComponent;
-  let fixture: ComponentFixture<HelloWorldNgifComponent>;
+describe('HelloWorldDiComponent', () => {
+  let component: HelloWorldDiComponent;
+  let fixture: ComponentFixture<HelloWorldDiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HelloWorldNgifComponent ]
+      declarations: [ HelloWorldDiComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HelloWorldNgifComponent);
+    fixture = TestBed.createComponent(HelloWorldDiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

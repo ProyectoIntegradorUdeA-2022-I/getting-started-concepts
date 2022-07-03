@@ -15,4 +15,4 @@
 
 <!-- This paragraph is always rendered, but it's only editable if canEdit is true, 
     and the message changes from the controller depending on the canEdit value -->
-<p [contentEditable]="canEdit">{{ message }}</p>
+<p [contentEditable]="canEdit" [style.color]="fontColor" [style.font]="fontFont">{{ message }}</p>
